@@ -19,21 +19,39 @@
       </div>
     </div>
     <div class="check__images">
-      <img class="check__images-robot" src="../../images/check-robot.png" alt="robot">
-      <img class="check__images-phone" src="../../images/check-phone.png" alt="phone">
-      <img class="check__images-bottom" src="../../images/check-background.png" alt="bottom">
+      <div class="check__images-phone">
+        <lottie
+          :options="defaultOptions.phone"
+          :height="777"
+          :width="777"
+        />
+      </div>
+      <img class="check__images-bottom" src="./../../images/case-bottom.png" alt="bottom">
     </div>
   </div>
 </template>
 
 <script>
 import GradientRectangle from "~/components/UI/GradientRectangle";
+import lottie from 'vue-lottie/src/lottie.vue';
+import * as robotAnim from "~/assets/animations/phone.json";
 
 export default {
   name: "Check",
   components: {
-    GradientRectangle
-  }
+    GradientRectangle,
+    lottie
+  },
+  data() {
+    return {
+      defaultOptions: {
+        phone: {
+          animationData: robotAnim.default
+        }
+      },
+      animationSpeed: 1
+    };
+  },
 }
 </script>
 

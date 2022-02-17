@@ -1,4 +1,4 @@
-@import "~/assets/scss/variables.scss";
+@import "./../../assets/scss/variables.scss";
 
 .get-started {
   &__wrapper {
@@ -38,8 +38,8 @@
       position: absolute;
     }
     &-robot {
-      left: 112px;
-      top: -287px;
+      left: 1px;
+      top: -401px;
       position: absolute;
     }
     &-bottom {

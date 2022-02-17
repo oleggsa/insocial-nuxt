@@ -17,25 +17,44 @@
           </div>
         </div>
       </div>
+
       <div class="get-started__images">
-        <img class="get-started__images-icons" src="../../images/header-robot-icons.png" alt="icons">
-        <img class="get-started__images-robot" src="../../images/header-robot.png" alt="robot">
-        <img class="get-started__images-bottom" src="../../images/header-robot-under.png" alt="bottom">
+        <div class="get-started__images-robot">
+          <lottie
+            :options="defaultOptions.robot"
+            :height="600"
+            :width="600"
+          />
+        </div>
       </div>
     </div>
   </section>
 </template>
-<script>
 
+<script>
 import GradientRectangle from "~/components/UI/GradientRectangle";
 import CustomButton from "~/components/UI/CustomButton";
+import lottie from 'vue-lottie/src/lottie.vue';
+import * as robotAnim from "~/assets/animations/robot.json";
+
 
 export default {
   name: "GetStarted",
   components: {
     CustomButton,
-    GradientRectangle
-  }
+    GradientRectangle,
+    lottie
+  },
+  data() {
+    return {
+      defaultOptions: {
+        robot: {
+          animationData: robotAnim.default
+        }
+      },
+      animationSpeed: 1
+    };
+  },
 }
 </script>
 

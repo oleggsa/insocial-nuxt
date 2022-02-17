@@ -1,4 +1,4 @@
-@import "~/assets/scss/variables";
+@import "./../../assets/scss/variables";
 
 .check {
   &__wrapper {
@@ -84,8 +84,8 @@
       z-index: 10;
     }
     &-phone {
-      right: 162px;
-      bottom: -159px;
+      right: -139px;
+      bottom: -292px;
     }
     &-bottom {
       right: 65px;
