@@ -1,0 +1,119 @@
+@import "~/assets/scss/variables";
+
+.prices {
+  &__wrapper {
+    height: 770px;
+    margin-top: 133px;
+    background: url("../../images/prices-background.png") no-repeat center 95px;
+  }
+  &__content {
+    margin: 0 140px;
+    &-header {
+      text-align: center;
+      &-header {
+        display: inline-block;
+        & .rectangle {
+          height: 4px;
+          margin-top: 2px;
+        }
+        & h1 {
+          font-size: 36px;
+          font-weight: 600;
+          color: $primary;
+        }
+      }
+      &-desqr {
+        font-size: 18px;
+        color: $primary;
+        margin-top: 2px;
+      }
+    }
+    &-table {
+      width: 1040px;
+      height: 646px;
+      background-color: #ffffff;
+      margin-top: 49px;
+      margin-left: 60px;
+      box-shadow: 0 2px 8px rgba(3, 3, 3, 0.15);
+      border-radius: 8px;
+      &-prices {
+        padding-top: 15px;
+        padding-left: 24px;
+        &-plan h3,
+        &-period h3 {
+          font-weight: 500;
+          font-size: 24px;
+          color: $primary
+        }
+        &-plan {
+          position: relative;
+          &-header,
+          &-desqr {
+            display: inline-block;
+          }
+          &-header {
+            margin-bottom: 5px;
+          }
+          &-desqr {
+            position: absolute;
+            right: 46px;
+            top: 5px;
+            color: $primary
+          }
+        }
+      }
+    }
+  }
+  &__promocode {
+    background: #F8F8F8;
+    width: 1000px;
+    height: 56px;
+    margin: 16px auto;
+    border-radius: 8px;
+    &-content {
+      color: $primary;
+      font-weight: 600;
+      font-size: 16px;
+      padding-top: 19px;
+      padding-left: 22px;
+      &:before {
+        content: url("../../icons/prices-promo.png");
+        margin-right: 8px;
+        vertical-align: -3px;
+      }
+      &:after {
+        content: url("../../icons/header-arrow.png");
+        float: right;
+        margin-right: 18px;
+      }
+    }
+  }
+  &__border-bottom {
+    width: 1000px;
+    height: 4px;
+    background: #F8F8F8;
+    margin: 0 auto;
+  }
+  &__features {
+    &-title {
+      font-size: 14px;
+      color: $primary;
+      margin-left: 33px;
+      margin-top: 11px;
+    }
+    &-content {
+      margin-left: 28px;
+      margin-top: 6px;
+    }
+  }
+}
+
+.button-success {
+  width: 478.5px;
+  height: 56px;
+  margin-top: 4px;
+  & img {
+    vertical-align: -4px;
+    margin-right: 16px;
+  }
+}
