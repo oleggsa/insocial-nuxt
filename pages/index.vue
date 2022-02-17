@@ -1,5 +1,14 @@
 <template>
-
+  <div class="wrapper">
+    <Header :isSticky=true />
+    <GetStarted/>
+    <Check/>
+    <Why/>
+    <Prices/>
+    <Feedback/>
+    <Footer/>
+    <Copyright/>
+  </div>
 </template>
 
 <script>
